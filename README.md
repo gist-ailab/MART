@@ -1,4 +1,4 @@
-<!--<h2 align="center">MART: MultiscAle Relational Transformer Networks for Trajectory Prediction</h2>-->
+# MART
 
 This repo is the official implementation of "***MART: MultiscAle Relational Transformer Networks for Trajectory Prediction (ECCV 2024)***"
 
