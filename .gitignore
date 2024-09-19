@@ -161,4 +161,3 @@ cython_debug/
 
 results/
 *.csv
-*.pth
