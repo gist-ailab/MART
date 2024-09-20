@@ -17,7 +17,7 @@
   <a href=""><strong><code>Project Page</code></strong></a>
   <a href="https://arxiv.org/abs/2407.21635"><strong><code>ECCV Paper</code></strong></a>
   <a href="https://github.com/gist-ailab/MART"><strong><code>Source Code</code></strong></a>
-  <a href="[#-citation](https://github.com/gist-ailab/MART?tab=readme-ov-file#-citation)"><strong><code>Cite MART</code></strong></a>
+  <a href="#-citation)"><strong><code>Cite MART</code></strong></a>
 </p>
 
 ---
