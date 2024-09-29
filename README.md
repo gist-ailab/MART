@@ -14,8 +14,9 @@
 </p>
 
 <p align="center">
-  <a href=""><strong><code>Project Page</code></strong></a>
+  <!-- <a href=""><strong><code>Project Page</code></strong></a> -->
   <a href="https://arxiv.org/abs/2407.21635"><strong><code>ECCV Paper</code></strong></a>
+  <a href="https://github.com/gist-ailab/MART/poster.png"><strong><code>Poster</code></strong></a>
   <a href="https://github.com/gist-ailab/MART"><strong><code>Source Code</code></strong></a>
   <a href="#-citation"><strong><code>Cite MART</code></strong></a>
 </p>
@@ -27,8 +28,8 @@ This repo is the official implementation of "***MART: MultiscAle Relational Tran
 - [X] (2024.09.19) Official repository of 🛒MART🛒 is released
 
 
-## 🏛️ Model Architecture
-![model](./figures/main_model.png)
+## 🪧 ECCV Poster
+![model](./figures/poster.png)
 
 ## 🚀 Getting Started
 
@@ -52,7 +53,7 @@ pip install -r requirements.txt
 
 * The dataset is included in ```./datasets/nba/```
 
-* For reproducibility, we set the seed with 1.
+<!-- * For reproducibility, we set the seed with 1. -->
 
 ### Train MART on the NBA dataset
 
