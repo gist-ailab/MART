@@ -1,4 +1,4 @@
-<h2 align="center"> 🛒MART🛒 <br /> MultiscAle Relational Transformer Networks for Trajectory Prediction </h2>
+<h2 align="center"> 🛒MART🛒 <br /> MultiscAle Relational Transformer Networks for Multi-agent Trajectory Prediction </h2>
 <p align="center">
   <a href="https://scholar.google.com/citations?user=Q0LR04AAAAAJ&hl=ko&oi=ao"><strong>Seongju Lee</strong></a>
   ·  
@@ -22,7 +22,7 @@
 </p>
 
 ---
-This repo is the official implementation of "***MART: MultiscAle Relational Transformer Networks for Trajectory Prediction (ECCV 2024)***"
+This repo is the official implementation of "***MART: MultiscAle Relational Transformer Networks for Multi-agent Trajectory Prediction (ECCV 2024)***"
 
 ## 📢 Updates
 - [X] (2024.09.19) Official repository of 🛒MART🛒 is released
