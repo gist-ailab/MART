@@ -84,13 +84,27 @@ pip install -r requirements.txt
   ```
 
 ## 📊 Main Results
-### NBA dataset
-* minADE_20: 0.727 [m]
-* minFDE_20: 0.903 [m]
+### 🏀 NBA Dataset
+```
+minADE (4.0s): 0.727
+minFDE (4.0s): 0.903
+```
 
-### How to reproduce results
 
-#### 🏀 NBA Dataset
+### 🚶 ETH-UCY Dataset
+```
+minADE Table
+       ETH    HOTEL    UNIV    ZARA1    ZARA2    AVG
+       0.35    0.14    0.25    0.17    0.13    0.21    
+
+minFDE Table
+       ETH    HOTEL    UNIV    ZARA1    ZARA2    AVG
+       0.47    0.22    0.45    0.29    0.22    0.33    
+```
+
+## How to reproduce results
+
+### 🏀 NBA Dataset
 
 * The checkpoint is included in ```./checkpoints/mart_nba_reproduce/```
 
@@ -99,7 +113,7 @@ pip install -r requirements.txt
   ```
 * The results will be saved in ```./results/nba_result.csv```
 
-#### 🚶 ETH-UCY Dataset
+### 🚶 ETH-UCY Dataset
 
 * The checkpoint is included in ```./checkpoints/mart_eth_reproduce/```
   ```

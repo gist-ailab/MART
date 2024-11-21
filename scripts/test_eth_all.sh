@@ -71,7 +71,7 @@ fi
 
 # Summarize results in table format
 echo ""
-echo "ADE Table"
+echo "minADE Table"
 echo -n "       "
 for dataset in "${datasets[@]}"; do
   echo -n "$dataset    "
@@ -84,7 +84,7 @@ done
 printf "%-8s\n" "$minade_avg"
 
 echo ""
-echo "FDE Table"
+echo "minFDE Table"
 echo -n "       "
 for dataset in "${datasets[@]}"; do
   echo -n "$dataset    "
