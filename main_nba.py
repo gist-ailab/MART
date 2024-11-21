@@ -133,7 +133,7 @@ def train(epoch, model, optimizer, loader):
         if i % 100 == 0:
             th = get_th(opts, model)
             print('[{}] Epochs: {:02d}/{:02d}| It: {:04d}/{:04d} | Loss: {:03f} | Threshold: {} | LR: {}'
-                  .format(loader.dataset.mode.upper(), epoch, opts.num_epochs, i, loader_len, total_loss.item(), th, optimizer.param_groups[0]['lr']))
+                  .format(loader.dataset.mode.upper(), epoch + 1, opts.num_epochs, i + 1, loader_len, total_loss.item(), th, optimizer.param_groups[0]['lr']))
     return avg_meter['loss'] / avg_meter['counter']
 
 

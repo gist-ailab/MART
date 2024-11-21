@@ -27,10 +27,11 @@ This repo is the official implementation of "***MART: MultiscAle Relational Tran
 ## 📢 Updates
 - [X] (2024.09.19) Official repository of 🛒MART🛒 is released
 - [X] (2024.09.30) Update ECCV poster
+- [X] (2024.11.21) Train and evaluation code for ETH-UCY dataset is uploaded
+- [ ] (2024.xx.xx) Train and evaluation code for SDD dataset is uploaded
 
 
-
-## 🪧 ECCV Poster
+## 🖼️ ECCV Poster
 ![model](./figures/poster.png)
 
 ## 🚀 Getting Started
@@ -51,22 +52,36 @@ pip install -r requirements.txt
 
 ## 🚂 Train & Evaluation
 
-* Trained and evaluated on NVIDIA GeForce RTX 3090 with python 3.8.
+<!-- * Trained and evaluated on NVIDIA GeForce RTX 3090 with python 3.8. -->
+
+### 🏀 NBA Dataset
 
 * The dataset is included in ```./datasets/nba/```
 
-<!-- * For reproducibility, we set the seed with 1. -->
+* Train MART on the NBA dataset
 
-### Train MART on the NBA dataset
+  ```
+  python main_nba.py --config ./configs/mart_nba.yaml --gpu $GPU_ID
+  ```
 
-```
-python main_nba.py --config ./configs/mart_nba.yaml --gpu $GPU_IDs
-```
+* Test MART on the NBA dataset after training
+  ```
+  python main_nba.py --config ./configs/mart_nba.yaml --gpu $GPU_ID --test
+  ```
 
-### Test MART on the NBA dataset after training
-```
-python main_nba.py --config ./configs/mart_nba.yaml --gpu $GPU_IDs --test
-```
+### 🚶 ETH-UCY Dataset
+* The dataset is included in ```./datasets/ethucy/```
+* Train MART on the ETH-UCY dataset
+  ```
+  chmod +x ./scripts/train_eth_all.sh
+  ./scripts/train_eth_all.sh ./configs/mart_eth.yaml $GPU_ID
+  ```
+
+* Test MART on the ETH-UCY dataset after training
+  ```
+  chmod +x ./scripts/test_eth_all.sh
+  ./scripts/test_eth_all.sh ./configs/mart_eth.yaml $GPU_ID
+  ```
 
 ## 📊 Main Results
 ### NBA dataset
@@ -75,11 +90,23 @@ python main_nba.py --config ./configs/mart_nba.yaml --gpu $GPU_IDs --test
 
 ### How to reproduce results
 
+#### 🏀 NBA Dataset
+
 * The checkpoint is included in ```./checkpoints/mart_nba_reproduce/```
 
-```
-python main_nba.py --config ./configs/mart_nba_reproduce.yaml --gpu $GPU_IDs --test
-```
+  ```
+  python main_nba.py --config ./configs/mart_nba_reproduce.yaml --gpu $GPU_ID --test
+  ```
+* The results will be saved in ```./results/nba_result.csv```
+
+#### 🚶 ETH-UCY Dataset
+
+* The checkpoint is included in ```./checkpoints/mart_eth_reproduce/```
+  ```
+  ./scripts/test_eth_all.sh ./configs/mart_nba_reproduce.yaml $GPU_ID
+  ```
+* The results will be saved in ```./results/$SUBSET-NAME_result.csv```
+
 
 ## 📝 Citation
 ```bibtex
@@ -94,5 +121,7 @@ python main_nba.py --config ./configs/mart_nba_reproduce.yaml --gpu $GPU_IDs --t
 ## 🤗 Acknowledgement
 * The part of the code about the feature initialization is adapted from ([GroupNet](https://github.com/MediaBrain-SJTU/GroupNet)).
 * Thanks for sharing the preprocessed NBA dataset and dataloader ([LED](https://github.com/MediaBrain-SJTU/LED)).
+* Thanks for sharing the ETH-UCY dataloader ([SGCN](https://github.com/shuaishiliu/SGCN/blob/43fe262cba44d33d98163c0c4b9dfbaf6517a646/utils.py))
+* Thanks for sharing the training code of ETH-UCY ([NPSN](https://github.com/InhwanBae/NPSN.git))
 * Thanks for providing the code of the Relational Transformer ([RT](https://github.com/CameronDiao/relational-transformer)). We implemented the RT from ```jax``` to ```pytorch```.
 

@@ -76,7 +76,7 @@ class RT(nn.Module):
         )
         # self.aggregation = aggregation # 'cat', 'avg', 'sum', 'att'
         self.aggregation = 'cat'
-        print('[INFO] RT Agg: {}'.format(self.aggregation))
+        print('[INFO] PRT Agg: {}'.format(self.aggregation))
         self.layers = nn.ModuleList([copy.deepcopy(layer) for _ in range(num_layers)])
         self.node2edge_mlp = MLP(input_dim=node_dim * 2 if self.aggregation == 'cat' else node_dim, output_dim=node_dim, hidden_size=(node_hidden_dim,))
         if self.aggregation == 'att':
