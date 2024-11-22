@@ -85,7 +85,7 @@ pip install -r requirements.txt
   ./scripts/test_eth_all.sh ./configs/mart_eth.yaml $GPU_ID
   ```
 
-### 🚶 SDD Dataset
+### 🚁 SDD Dataset
 * The dataset is included in ```./datasets/stanford/```
 
 * Train MART on the SDD dataset
