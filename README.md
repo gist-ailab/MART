@@ -29,8 +29,8 @@ This repo is the official implementation of "***MART: MultiscAle Relational Tran
 - [X] (2024.09.30) Update ECCV poster
 - [X] (2024.11.21) Train and evaluation code for ETH-UCY dataset is uploaded
 - [X] (2024.11.22) Train and evaluation code for SDD dataset is uploaded
-- [] (2024.xx.xx) Source code for convert SDD dataset from PECNet is uploaded
-- [] (2024.xx.xx) Source code for visualization is uploaded
+- [ ] (2024.xx.xx) Source code for convert SDD dataset from PECNet is uploaded
+- [ ] (2024.xx.xx) Source code for visualization is uploaded
 
 
 ## 🖼️ ECCV Poster
