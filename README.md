@@ -28,7 +28,9 @@ This repo is the official implementation of "***MART: MultiscAle Relational Tran
 - [X] (2024.09.19) Official repository of 🛒MART🛒 is released
 - [X] (2024.09.30) Update ECCV poster
 - [X] (2024.11.21) Train and evaluation code for ETH-UCY dataset is uploaded
-- [ ] (2024.xx.xx) Train and evaluation code for SDD dataset is uploaded
+- [X] (2024.11.22) Train and evaluation code for SDD dataset is uploaded
+- [] (2024.xx.xx) Source code for convert SDD dataset from PECNet is uploaded
+- [] (2024.xx.xx) Source code for visualization is uploaded
 
 
 ## 🖼️ ECCV Poster
@@ -83,6 +85,20 @@ pip install -r requirements.txt
   ./scripts/test_eth_all.sh ./configs/mart_eth.yaml $GPU_ID
   ```
 
+### 🚶 SDD Dataset
+* The dataset is included in ```./datasets/stanford/```
+
+* Train MART on the SDD dataset
+
+  ```
+  python main_sdd.py --config ./configs/mart_sdd.yaml --gpu $GPU_ID
+  ```
+
+* Test MART on the SDD dataset after training
+  ```
+  python main_sdd.py --config ./configs/mart_sdd.yaml --gpu $GPU_ID --test
+  ```
+
 ## 📊 Main Results
 ### 🏀 NBA Dataset
 ```
@@ -102,7 +118,13 @@ minFDE Table
        0.47    0.22    0.45    0.29    0.22    0.33    
 ```
 
-## How to reproduce results
+### 🚁 SDD Dataset
+```
+minADE: 7.43
+minFDE: 11.82
+```
+
+## 🐣 How to reproduce results
 
 ### 🏀 NBA Dataset
 
@@ -115,11 +137,19 @@ minFDE Table
 
 ### 🚶 ETH-UCY Dataset
 
-* The checkpoint is included in ```./checkpoints/mart_eth_reproduce/```
+* The checkpoints are included in ```./checkpoints/mart_eth_reproduce/```
   ```
   ./scripts/test_eth_all.sh ./configs/mart_nba_reproduce.yaml $GPU_ID
   ```
 * The results will be saved in ```./results/$SUBSET-NAME_result.csv```
+
+### 🚁 SDD Dataset
+
+* The checkpoint is included in ```./checkpoints/mart_sdd_reproduce/```
+  ```
+  python main_sdd.py --config ./configs/mart_sdd_reproduce.yaml --gpu $GPU_ID --test
+  ```
+* The results will be saved in ```./results/sdd_result.csv```
 
 
 ## 📝 Citation
@@ -135,7 +165,8 @@ minFDE Table
 ## 🤗 Acknowledgement
 * The part of the code about the feature initialization is adapted from ([GroupNet](https://github.com/MediaBrain-SJTU/GroupNet)).
 * Thanks for sharing the preprocessed NBA dataset and dataloader ([LED](https://github.com/MediaBrain-SJTU/LED)).
-* Thanks for sharing the ETH-UCY dataloader ([SGCN](https://github.com/shuaishiliu/SGCN/blob/43fe262cba44d33d98163c0c4b9dfbaf6517a646/utils.py))
-* Thanks for sharing the training code of ETH-UCY ([NPSN](https://github.com/InhwanBae/NPSN.git))
+* Thanks for sharing the ETH-UCY dataloader ([SGCN](https://github.com/shuaishiliu/SGCN/blob/43fe262cba44d33d98163c0c4b9dfbaf6517a646/utils.py)).
+* Thanks for sharing the training code of ETH-UCY ([NPSN](https://github.com/InhwanBae/NPSN.git)).
+* Thanks for sharing the preprocessed SDD dataset ([PECNet](https://github.com/HarshayuGirase/Human-Path-Prediction)).
 * Thanks for providing the code of the Relational Transformer ([RT](https://github.com/CameronDiao/relational-transformer)). We implemented the RT from ```jax``` to ```pytorch```.
 

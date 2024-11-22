@@ -1,0 +1,27 @@
+# model params
+num_layers: 4
+num_heads: 8
+model_dim: 64
+hidden_dim: 128
+decoder_hidden_dim: 128
+dropout: 0.0
+sample_k: 20
+aggregation: 'avg'
+function_type: 2
+hyper_scales: [1, 'adaptive']
+
+# input/output params
+past_length: 8
+future_length: 12
+inputs: ['vel_x', 'vel_y']
+pred_rel: True
+scale: 1.86
+
+# training params
+num_epochs: 300
+lr: 0.001
+clip_grad: null
+batch_size: 64
+scheduler_type: MultiStepLR
+milestones: [100, 200]
+decay_gamma: 0.5
