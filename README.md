@@ -15,7 +15,8 @@
 
 <p align="center">
   <!-- <a href=""><strong><code>Project Page</code></strong></a> -->
-  <a href="https://arxiv.org/abs/2407.21635"><strong><code>ECCV Paper</code></strong></a>
+  <a href="https://link.springer.com/chapter/10.1007/978-3-031-72848-8_6"><strong><code>ECCV Paper</code></strong></a>
+  <a href="https://arxiv.org/abs/2407.21635"><strong><code>Arxiv</code></strong></a>
   <a href="https://raw.githubusercontent.com/gist-ailab/MART/main/figures/poster.png"><strong><code>Poster</code></strong></a>
   <a href="https://github.com/gist-ailab/MART"><strong><code>Source Code</code></strong></a>
   <a href="#-citation"><strong><code>Cite MART</code></strong></a>
