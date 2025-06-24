@@ -161,13 +161,13 @@ minFDE: 11.82
 
 ## 📝 Citation
 ```bibtex
-@inproceedings{lee2025mart,
-  title = {MART: MultiscAle Relational Transformer Networks for Multi-agent Trajectory Prediction},
-  author = {Lee, Seongju and Lee, Junseok and Yu, Yeonguk and Kim, Taeri and Lee, Kyoobin},
-  booktitle = {Computer Vision -- ECCV 2024},
-  pages = {89--107},
-  year = {2025},
-  organization = {Springer}
+@inproceedings{lee2024mart,
+  title={MART: MultiscAle Relational Transformer Networks for Multi-agent Trajectory Prediction},
+  author={Lee, Seongju and Lee, Junseok and Yu, Yeonguk and Kim, Taeri and Lee, Kyoobin},
+  booktitle={European Conference on Computer Vision},
+  pages={89--107},
+  year={2024},
+  organization={Springer}
 }
 ```
 
