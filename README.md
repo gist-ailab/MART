@@ -103,11 +103,16 @@ pip install -r requirements.txt
 
 ## 📊 Main Results
 ### 🏀 NBA Dataset
-```
-minADE (4.0s): 0.728
-minFDE (4.0s): 0.902
-```
-
+* Version with minor bug fixes
+  ```
+  minADE (4.0s): 0.728
+  minFDE (4.0s): 0.902
+  ```
+* In paper
+  ```
+  minADE (4.0s): 0.727
+  minFDE (4.0s): 0.903
+  ```
 
 ### 🚶 ETH-UCY Dataset
 ```
