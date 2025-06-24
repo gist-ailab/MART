@@ -293,7 +293,7 @@ class RTAttentionLayer(nn.Module):
         k = k_n.reshape(B, self.num_heads, 1, N, self.head_dim) + k_e
         
         q = q.reshape(B, self.num_heads, N, N, 1, self.head_dim)
-        k = q.reshape(B, self.num_heads, N, N, self.head_dim, 1)
+        k = k.reshape(B, self.num_heads, N, N, self.head_dim, 1)
         
         qk = torch.matmul(q, k)
         qk = qk.reshape(B, self.num_heads, N, N)

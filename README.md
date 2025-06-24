@@ -30,8 +30,9 @@ This repo is the official implementation of "***MART: MultiscAle Relational Tran
 - [X] (2024.09.30) Update ECCV poster
 - [X] (2024.11.21) Train and evaluation code for ETH-UCY dataset is uploaded
 - [X] (2024.11.22) Train and evaluation code for SDD dataset is uploaded
-- [ ] (2024.xx.xx) Source code for convert SDD dataset from PECNet is uploaded
-- [ ] (2024.xx.xx) Source code for visualization is uploaded
+- [X] (2025.06.24) Minor bug in PRT is fixed
+- [ ] (2025.xx.xx) Source code for convert SDD dataset from PECNet is uploaded
+- [ ] (2025.xx.xx) Source code for visualization is uploaded
 
 
 ## 🖼️ ECCV Poster
@@ -103,8 +104,8 @@ pip install -r requirements.txt
 ## 📊 Main Results
 ### 🏀 NBA Dataset
 ```
-minADE (4.0s): 0.727
-minFDE (4.0s): 0.903
+minADE (4.0s): 0.728
+minFDE (4.0s): 0.902
 ```
 
 
@@ -140,7 +141,7 @@ minFDE: 11.82
 
 * The checkpoints are included in ```./checkpoints/mart_eth_reproduce/```
   ```
-  ./scripts/test_eth_all.sh ./configs/mart_nba_reproduce.yaml $GPU_ID
+  ./scripts/test_eth_all.sh ./configs/mart_eth_reproduce.yaml $GPU_ID
   ```
 * The results will be saved in ```./results/$SUBSET-NAME_result.csv```
 
